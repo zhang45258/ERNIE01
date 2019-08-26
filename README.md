@@ -3,7 +3,7 @@
    ### 本代码用于：  
  ### 一、执行Fine-tuning任务，生成 model。  
     操作步骤：  
-      1.将所有“正反例”txt文本放在".lcqml\Fine-tuning"位置（清空原有位置的文件）。  
+      1.将所有“正反例”txt文本放在".lcqml\Fine-tuning\"文件夹内（清空该文件夹原有文件）。  
       2.将finetune_args.py第29行：model_g.add_arg("init_checkpoint", str,  "./checkpoints/step_****", ......）  
       地址修改为"./checkpoints/step_****"(上次任务生成文件夹名称)。要使用上次训练的检查点继续训练。如果不改，上一次的训练  
       数据就没有存储。这里提供一个检查点的下载地址：  
